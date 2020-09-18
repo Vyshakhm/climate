@@ -7,16 +7,16 @@ import os
 import requests
 import json
 #clearing screen
-os.system("clear")
+os.system("cls")
 #parent window
 root=Tk()
 root.title("wheather update") 
-root.iconbitmap("sun.png")
+root.iconbitmap("images/sun.png")
 root.geometry("500x350")
 root.resizable(False,False)
 
 canvas=Canvas(root,height=400,width=600)
-background_image= ImageTk.PhotoImage(Image.open("photo1.jpg"))
+background_image= ImageTk.PhotoImage(Image.open("images/photo1.jpg"))
 background_label=Label(canvas,image=background_image)
 background_label.place(width=500,height=400)
 canvas.pack()
