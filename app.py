@@ -17,7 +17,7 @@ class Application(Frame):
 	def show_weather(self):
 		self.winfo_toplevel().title("weather")
 
-		self.background_image= ImageTk.PhotoImage(Image.open("photo1.jpg"))
+		self.background_image= ImageTk.PhotoImage(Image.open("images/photo1.jpg"))
 		self.background_label=Label(self.master,image=self.background_image)
 		self.background_label.place(width=500,height=400)
 
@@ -55,7 +55,7 @@ class Application(Frame):
 			str(humi).delete(0,END)
 
 root=Tk()
-root.iconbitmap("sun.png")
+root.iconbitmap("images/sun.png")
 root.geometry("500x350")
 root.resizable(False,False)
 app=Application(master=root)
